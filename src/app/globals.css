@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --coral: #ff6464;
-  --coral-dark: #e54d4d;
-  --coral-light: #fff4f4;
-  --teal: #071f1b;
-  --teal-mid: #1a3d38;
-  --cream: #fafaf7;
-  --warm-gray: #f2f1ec;
-  --mid-gray: #8b9190;
-  --border: #e5e3db;
+  --coral: #9b8059;
+  --coral-dark: #806746;
+  --coral-light: #eee8df;
+  --teal: #141413;
+  --teal-mid: #302e29;
+  --cream: #f3f0ea;
+  --warm-gray: #e9e5dd;
+  --mid-gray: #777168;
+  --border: #d3ccbf;
 }
 
 @theme inline {
@@ -22,8 +22,8 @@
   --color-warm-gray: var(--warm-gray);
   --color-mid-gray: var(--mid-gray);
   --color-border: var(--border);
-  --font-heading: var(--font-belleza);
-  --font-body: var(--font-work-sans);
+  --font-heading: var(--font-manrope);
+  --font-body: var(--font-inter);
 }
 
 html {
@@ -33,13 +33,13 @@ html {
 body {
   background: var(--cream);
   color: var(--teal);
-  font-family: var(--font-work-sans), system-ui, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4 {
-  font-family: var(--font-belleza), Georgia, serif;
+  font-family: var(--font-manrope), Arial, sans-serif;
   font-weight: 400;
   letter-spacing: -0.01em;
   line-height: 1.15;

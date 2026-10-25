@@ -1,4 +1,4 @@
-const LINK_CLASS = "text-[#ff6464] hover:text-[#ff8080] underline decoration-1 underline-offset-4";
+const LINK_CLASS = "text-[#9b8059] hover:text-[#b49a74] underline decoration-1 underline-offset-4";
 
 const STEPS: { number: string; title: string; description: React.ReactNode }[] = [
   {
@@ -31,7 +31,7 @@ const STEPS: { number: string; title: string; description: React.ReactNode }[] =
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-28 bg-[#071f1b] relative overflow-hidden">
+    <section id="how-it-works" className="py-28 bg-[#141413] relative overflow-hidden">
       <div
         className="absolute inset-0 opacity-[0.04]"
         style={{
@@ -39,12 +39,12 @@ export default function HowItWorks() {
           backgroundSize: "40px 40px",
         }}
       />
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-[#ff6464]/5 blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-[#9b8059]/5 blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#ff6464]" />
+            <span className="w-2 h-2 rounded-full bg-[#9b8059]" />
             <span className="text-xs font-medium tracking-[0.18em] uppercase text-white/40">
               How It Works
             </span>

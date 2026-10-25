@@ -2,7 +2,7 @@ import { STRIPE_LINK_PDF, STRIPE_LINK_FULL, withUtm } from "./stripeLinks";
 
 export default function FinalCTA() {
   return (
-    <section className="py-28 bg-[#ff6464] relative overflow-hidden">
+    <section className="py-28 bg-[#9b8059] relative overflow-hidden">
       <div
         className="absolute inset-0 opacity-[0.06]"
         style={{
@@ -11,7 +11,7 @@ export default function FinalCTA() {
         }}
       />
       <div className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-white/10 blur-3xl pointer-events-none" />
-      <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-[#071f1b]/10 blur-3xl pointer-events-none" />
+      <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-[#141413]/10 blur-3xl pointer-events-none" />
 
       <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
         <h2 className="text-4xl lg:text-6xl text-white mb-6 leading-tight">
@@ -26,7 +26,7 @@ export default function FinalCTA() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <a
             href={withUtm(STRIPE_LINK_FULL, "final_cta_full")}
-            className="inline-flex items-center gap-2 bg-white text-[#ff6464] hover:bg-[#fff4f4] font-semibold px-8 py-4 rounded-full transition-all duration-200 hover:shadow-xl hover:shadow-[#071f1b]/20 hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 bg-white text-[#9b8059] hover:bg-[#eee8df] font-semibold px-8 py-4 rounded-full transition-all duration-200 hover:shadow-xl hover:shadow-[#141413]/20 hover:-translate-y-0.5"
           >
             Get the Full OS — $99
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

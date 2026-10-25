@@ -2,7 +2,7 @@ import { STRIPE_LINK_PDF, STRIPE_LINK_FULL, withUtm } from "@/components/ownersh
 
 export default function CtaBlock({ location }: { location: string }) {
   return (
-    <div className="rounded-3xl bg-[#071f1b] p-8 lg:p-10 text-center">
+    <div className="rounded-3xl bg-[#141413] p-8 lg:p-10 text-center">
       <h2 className="text-2xl lg:text-3xl text-white mb-3">
         The GM Ownership Report OS
       </h2>
@@ -13,7 +13,7 @@ export default function CtaBlock({ location }: { location: string }) {
       <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a
           href={withUtm(STRIPE_LINK_FULL, `resources_${location}`)}
-          className="inline-flex items-center justify-center gap-2 bg-[#ff6464] hover:bg-[#e54d4d] text-white font-medium px-7 py-4 rounded-full transition-all duration-200"
+          className="inline-flex items-center justify-center gap-2 bg-[#9b8059] hover:bg-[#806746] text-white font-medium px-7 py-4 rounded-full transition-all duration-200"
         >
           Get the Full OS — $99
         </a>

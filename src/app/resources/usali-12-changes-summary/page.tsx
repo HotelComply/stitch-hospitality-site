@@ -56,7 +56,7 @@ export default function Page() {
             href="https://www.hftp.org"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#ff6464] hover:text-[#e54d4d] underline decoration-1 underline-offset-4"
+            className="text-[#9b8059] hover:text-[#806746] underline decoration-1 underline-offset-4"
           >
             Hospitality Financial and Technology Professionals (HFTP)
           </a>
@@ -212,7 +212,7 @@ export default function Page() {
             writing the ownership report narrative owners actually read
           </InternalLink>
           , or go back to{" "}
-          <InternalLink href="/">The GM Ownership Report OS</InternalLink> for the
+          <InternalLink href="/ownership-report">The GM Ownership Report OS</InternalLink> for the
           full system built around all of this.
         </P>
       </ArticleLayout>

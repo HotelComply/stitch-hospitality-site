@@ -66,7 +66,7 @@ export default function Page() {
         </P>
         <UL>
           <li>
-            <strong className="text-[#071f1b] font-medium">
+            <strong className="text-[#141413] font-medium">
               "Are we making the money we expected, and if not, why?"
             </strong>{" "}
             This is the variance question, and the answer they want is causal, not
@@ -75,13 +75,13 @@ export default function Page() {
             cost problem.
           </li>
           <li>
-            <strong className="text-[#071f1b] font-medium">"Is this a trend or a blip?"</strong>{" "}
+            <strong className="text-[#141413] font-medium">"Is this a trend or a blip?"</strong>{" "}
             Owners fear the durable problem dressed up as a bad month. Every
             unfavorable variance should get a deliberate call — transitory or
             structural — and the report should say which.
           </li>
           <li>
-            <strong className="text-[#071f1b] font-medium">"Do you have it under control?"</strong>{" "}
+            <strong className="text-[#141413] font-medium">"Do you have it under control?"</strong>{" "}
             The real question underneath the other two. You answer it not with a
             sentence but with the whole report — naming the bad news first, having
             the response ready before it's asked.
@@ -205,7 +205,7 @@ export default function Page() {
           happened, why, response, outlook — is what separates a report that gets a
           GM managed from one that gets a GM trusted. It's also the entire premise
           behind{" "}
-          <InternalLink href="/">The GM Ownership Report OS</InternalLink> — a system
+          <InternalLink href="/ownership-report">The GM Ownership Report OS</InternalLink> — a system
           built to make this narrative discipline repeatable every month, not
           reinvented under deadline the night before the call.
         </P>

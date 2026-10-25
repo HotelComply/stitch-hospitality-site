@@ -1,18 +1,18 @@
 export default function WhatsInside() {
   return (
-    <section id="whats-inside" className="py-28 bg-[#fafaf7]">
+    <section id="whats-inside" className="py-28 bg-[#f3f0ea]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-2xl mb-16">
           <div className="inline-flex items-center gap-2 mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#ff6464]" />
-            <span className="text-xs font-medium tracking-[0.18em] uppercase text-[#8b9190]">
+            <span className="w-2 h-2 rounded-full bg-[#9b8059]" />
+            <span className="text-xs font-medium tracking-[0.18em] uppercase text-[#777168]">
               What&apos;s Inside
             </span>
           </div>
-          <h2 className="text-4xl lg:text-5xl text-[#071f1b] mb-6">
+          <h2 className="text-4xl lg:text-5xl text-[#141413] mb-6">
             Four components. One system for the report you send every month.
           </h2>
-          <p className="text-lg text-[#071f1b]/60 font-light leading-relaxed">
+          <p className="text-lg text-[#141413]/60 font-light leading-relaxed">
             Built to be used together on your next month-end — the workbook flags
             the variances, the playbook tells you how to narrate them, the template
             holds the structure, and the prompts accelerate the drafting.
@@ -35,7 +35,7 @@ export default function WhatsInside() {
         </div>
 
         {/* Restatement Engine — hero feature */}
-        <div className="relative overflow-hidden rounded-3xl bg-[#071f1b] p-10 lg:p-14 mb-6">
+        <div className="relative overflow-hidden rounded-3xl bg-[#141413] p-10 lg:p-14 mb-6">
           <div
             className="absolute inset-0 opacity-[0.04]"
             style={{
@@ -43,13 +43,13 @@ export default function WhatsInside() {
               backgroundSize: "40px 40px",
             }}
           />
-          <div className="absolute top-0 right-0 w-80 h-80 rounded-full bg-[#ff6464]/10 blur-3xl pointer-events-none" />
+          <div className="absolute top-0 right-0 w-80 h-80 rounded-full bg-[#9b8059]/10 blur-3xl pointer-events-none" />
           <div className="relative max-w-3xl">
             <div className="inline-flex items-center gap-2 mb-6">
-              <svg className="w-4 h-4 text-[#ff6464]" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-[#9b8059]" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
               </svg>
-              <span className="text-xs font-medium tracking-[0.18em] uppercase text-[#ff6464]">
+              <span className="text-xs font-medium tracking-[0.18em] uppercase text-[#9b8059]">
                 The Restatement Engine
               </span>
             </div>
@@ -93,14 +93,14 @@ export default function WhatsInside() {
         </div>
 
         {/* Word Template + Prompt Library */}
-        <div className="p-8 lg:p-10 rounded-2xl border border-[#e5e3db] bg-white">
-          <h3 className="text-xl text-[#071f1b] mb-2 leading-snug">
+        <div className="p-8 lg:p-10 rounded-2xl border border-[#d3ccbf] bg-white">
+          <h3 className="text-xl text-[#141413] mb-2 leading-snug">
             The Word Template + Prompt Library
           </h3>
-          <p className="text-xs font-medium tracking-[0.15em] uppercase text-[#8b9190] mb-4">
+          <p className="text-xs font-medium tracking-[0.15em] uppercase text-[#777168] mb-4">
             From blank page to sent report
           </p>
-          <p className="text-sm text-[#071f1b]/60 leading-relaxed font-light mb-6 max-w-3xl">
+          <p className="text-sm text-[#141413]/60 leading-relaxed font-light mb-6 max-w-3xl">
             The ownership-report skeleton — Executive Summary through Initiatives
             &amp; Outlook — with placeholder guidance in each section. Plus 6–8
             prompts keyed to the workbook outputs, each annotated with what good
@@ -111,7 +111,7 @@ export default function WhatsInside() {
             {["Report skeleton", "Annotated prompts"].map((tag) => (
               <span
                 key={tag}
-                className="text-xs font-medium px-3 py-1 rounded-full bg-[#f2f1ec] text-[#071f1b]/60"
+                className="text-xs font-medium px-3 py-1 rounded-full bg-[#e9e5dd] text-[#141413]/60"
               >
                 {tag}
               </span>
@@ -135,17 +135,17 @@ function Card({
   tags: string[];
 }) {
   return (
-    <div className="p-8 rounded-2xl border border-[#e5e3db] bg-white hover:border-[#ff6464]/30 hover:shadow-lg hover:shadow-[#ff6464]/5 transition-all duration-300">
-      <h3 className="text-xl text-[#071f1b] mb-2 leading-snug">{title}</h3>
-      <p className="text-xs font-medium tracking-[0.15em] uppercase text-[#8b9190] mb-4">
+    <div className="p-8 rounded-2xl border border-[#d3ccbf] bg-white hover:border-[#9b8059]/30 hover:shadow-lg hover:shadow-[#9b8059]/5 transition-all duration-300">
+      <h3 className="text-xl text-[#141413] mb-2 leading-snug">{title}</h3>
+      <p className="text-xs font-medium tracking-[0.15em] uppercase text-[#777168] mb-4">
         {kicker}
       </p>
-      <p className="text-sm text-[#071f1b]/60 leading-relaxed font-light mb-6">{body}</p>
+      <p className="text-sm text-[#141413]/60 leading-relaxed font-light mb-6">{body}</p>
       <div className="flex flex-wrap gap-2">
         {tags.map((tag) => (
           <span
             key={tag}
-            className="text-xs font-medium px-3 py-1 rounded-full bg-[#f2f1ec] text-[#071f1b]/60"
+            className="text-xs font-medium px-3 py-1 rounded-full bg-[#e9e5dd] text-[#141413]/60"
           >
             {tag}
           </span>

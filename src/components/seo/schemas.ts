@@ -12,7 +12,7 @@ export const organizationSchema = {
   url: SITE_URL,
   logo: `${SITE_URL}/opengraph-image`,
   description:
-    "Stitch Hospitality builds The GM Ownership Report OS — an operator-built playbook, workbook, Word template, and prompt library that helps hotel general managers write ownership reports designed for the USALI 12th Revised Edition.",
+    "Stitch Hospitality provides interim, fractional, and project leadership for hotels across general management, operations, sales, marketing, commercial strategy, and catering.",
   sameAs: ["https://www.linkedin.com/company/stitchhospitality-com"],
   founder: {
     "@type": "Person",
