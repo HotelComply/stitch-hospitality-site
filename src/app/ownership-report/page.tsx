@@ -23,7 +23,7 @@ const HOMEPAGE_DESCRIPTION =
 export const metadata: Metadata = {
   title: "USALI 12 Ownership Report OS — Playbook + Workbook by a GM",
   description: HOMEPAGE_DESCRIPTION,
-  authors: [{ name: "Chris Suarez" }],
+  authors: [{ name: "Stitch Hospitality" }],
   robots: { index: true, follow: true },
   alternates: { canonical: PAGE_URL },
   openGraph: {
@@ -54,10 +54,8 @@ const productJsonLd = {
   description: HOMEPAGE_DESCRIPTION,
   category: "Hotel financial reporting / hospitality operations",
   image: `${PAGE_URL}opengraph-image`,
-  // Person credit for the actual author (Chris Suarez writes the product) is
-  // kept distinct from the Organization publisher — conflating the two would
-  // lose an accurate, already-verified distinction.
-  author: { "@type": "Person", name: "Chris Suarez", jobTitle: "Hotel General Manager" },
+  // Credited to the Organization: the site does not publish the founder's name.
+  author: organizationRef,
   publisher: organizationRef,
   audience: {
     "@type": "Audience",

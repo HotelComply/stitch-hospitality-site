@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   },
   description:
     "Interim and fractional hotel leadership across general management, operations, sales, marketing, commercial strategy, and catering.",
-  authors: [{ name: "Chris Suarez", url: "https://www.stitchhospitality.com" }],
-  creator: "Chris Suarez",
+  authors: [{ name: "Stitch Hospitality", url: "https://www.stitchhospitality.com" }],
+  creator: "Stitch Hospitality",
   publisher: "Stitch Hospitality",
   robots: {
     index: true,

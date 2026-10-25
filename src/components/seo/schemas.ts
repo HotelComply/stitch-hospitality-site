@@ -14,11 +14,6 @@ export const organizationSchema = {
   description:
     "Stitch Hospitality provides interim, fractional, and project leadership for hotels across general management, operations, sales, marketing, commercial strategy, and catering.",
   sameAs: ["https://www.linkedin.com/company/stitchhospitality-com"],
-  founder: {
-    "@type": "Person",
-    name: "Chris Suarez",
-    jobTitle: "General Manager",
-  },
 };
 
 export const organizationRef = { "@id": ORGANIZATION_ID };

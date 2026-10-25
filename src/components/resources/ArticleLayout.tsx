@@ -27,7 +27,7 @@ export function articleSchema({
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     datePublished,
     dateModified: datePublished,
-    author: { "@type": "Person", name: "Chris Suarez", jobTitle: "Hotel General Manager" },
+    author: organizationRef,
     publisher: organizationRef,
   };
 }
