@@ -1,6 +1,6 @@
 export default function UrgencyBand() {
   return (
-    <section className="bg-[#071f1b] py-6">
+    <section className="bg-[#141413] py-6">
       <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
         <p className="text-white/70 text-sm lg:text-base font-light leading-relaxed">
           Most management agreements bind the operator to the &ldquo;most current

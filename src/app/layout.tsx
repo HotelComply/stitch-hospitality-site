@@ -1,31 +1,20 @@
 import type { Metadata } from "next";
-import { Belleza, Work_Sans } from "next/font/google";
+import { Manrope, Inter } from "next/font/google";
 import JsonLd from "@/components/seo/JsonLd";
 import { organizationSchema } from "@/components/seo/schemas";
 import "./globals.css";
 
-const belleza = Belleza({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-belleza",
-  display: "swap",
-});
-
-const workSans = Work_Sans({
-  weight: ["300", "400", "500", "600"],
-  subsets: ["latin"],
-  variable: "--font-work-sans",
-  display: "swap",
-});
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope", display: "swap" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.stitchhospitality.com"),
   title: {
     template: "%s | Stitch Hospitality",
-    default: "Stitch Hospitality — The GM Ownership Report OS",
+    default: "Stitch Hospitality — Interim & Fractional Hotel Leadership",
   },
   description:
-    "An operator-built ownership-reporting system for hotel general managers, designed for USALI 12th Revised Edition. Playbook, workbook, template, and prompt library — built by a sitting GM.",
+    "Interim and fractional hotel leadership across general management, operations, sales, marketing, commercial strategy, and catering.",
   authors: [{ name: "Chris Suarez", url: "https://www.stitchhospitality.com" }],
   creator: "Chris Suarez",
   publisher: "Stitch Hospitality",
@@ -47,7 +36,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${belleza.variable} ${workSans.variable} h-full antialiased`}
+      className={`${manrope.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <JsonLd data={organizationSchema} />

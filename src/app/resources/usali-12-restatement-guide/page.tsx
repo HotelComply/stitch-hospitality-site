@@ -69,30 +69,30 @@ export default function Page() {
         </P>
         <UL>
           <li>
-            <strong className="text-[#071f1b] font-medium">Identify affected accounts.</strong>{" "}
+            <strong className="text-[#141413] font-medium">Identify affected accounts.</strong>{" "}
             From your licensed USALI 12 materials, list every account whose
             classification changed. Note the prior treatment and the current
             treatment in your own words — not the standard's.
           </li>
           <li>
-            <strong className="text-[#071f1b] font-medium">Quantify the reclassified amount.</strong>{" "}
+            <strong className="text-[#141413] font-medium">Quantify the reclassified amount.</strong>{" "}
             For each affected account, record the prior-year dollar amount that
             moves under the current classification — the figure that would
             otherwise contaminate your comparison.
           </li>
           <li>
-            <strong className="text-[#071f1b] font-medium">Restate the comparative.</strong>{" "}
+            <strong className="text-[#141413] font-medium">Restate the comparative.</strong>{" "}
             Rebuild the prior-year figure as if it had always used the current
             classification. This restated number, not the originally reported one,
             is what you compare the current period against.
           </li>
           <li>
-            <strong className="text-[#071f1b] font-medium">Draft the footnote.</strong>{" "}
+            <strong className="text-[#141413] font-medium">Draft the footnote.</strong>{" "}
             For every material reclassification, write the one- or two-sentence note
             that tells the owner what moved and why (pattern below).
           </li>
           <li>
-            <strong className="text-[#071f1b] font-medium">Check the fee base.</strong>{" "}
+            <strong className="text-[#141413] font-medium">Check the fee base.</strong>{" "}
             Using your management agreement's specific fee-base definition, note
             whether any reclassification touches the figure your incentive fee is
             calculated on, and prepare the sentence you'll use to surface it
@@ -220,7 +220,7 @@ export default function Page() {
             writing the ownership report narrative owners actually read
           </InternalLink>
           , or go back to{" "}
-          <InternalLink href="/">The GM Ownership Report OS</InternalLink> — the
+          <InternalLink href="/ownership-report">The GM Ownership Report OS</InternalLink> — the
           workbook's restatement engine turns this exact method into a calculating,
           reusable tool instead of a manual rebuild every month.
         </P>

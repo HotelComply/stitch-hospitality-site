@@ -1,9 +1,9 @@
 export default function DefinitionBlock() {
   return (
-    <section className="bg-white border-b border-[#e5e3db] py-10">
+    <section className="bg-white border-b border-[#d3ccbf] py-10">
       <div className="max-w-3xl mx-auto px-6 lg:px-8">
-        <p className="text-sm text-[#071f1b]/60 font-light leading-relaxed">
-          <strong className="text-[#071f1b] font-medium">
+        <p className="text-sm text-[#141413]/60 font-light leading-relaxed">
+          <strong className="text-[#141413] font-medium">
             What is The GM Ownership Report OS?
           </strong>{" "}
           It is a downloadable system — a PDF playbook, an 8-tab Excel workbook, a

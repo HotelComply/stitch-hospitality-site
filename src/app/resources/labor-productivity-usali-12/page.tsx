@@ -119,19 +119,19 @@ export default function Page() {
           manager.
         </P>
         <P>
-          <strong className="text-[#071f1b] font-medium">Version 1 — the recap.</strong>{" "}
+          <strong className="text-[#141413] font-medium">Version 1 — the recap.</strong>{" "}
           "Rooms payroll was $48,000 (6%) over budget." True, and useless. It
           restates the P&L and leaves every real question open.
         </P>
         <P>
-          <strong className="text-[#071f1b] font-medium">Version 2 — the excuse.</strong>{" "}
+          <strong className="text-[#141413] font-medium">Version 2 — the excuse.</strong>{" "}
           "Rooms payroll was over budget due to higher-than-expected occupancy and
           wage pressure." Better, but unquantified and self-serving — it silently
           assumes the labor flexed appropriately, which is exactly what an owner
           won't grant without evidence.
         </P>
         <P>
-          <strong className="text-[#071f1b] font-medium">
+          <strong className="text-[#141413] font-medium">
             Version 3 — the decomposition.
           </strong>{" "}
           "Rooms payroll was $48,000 (6%) over budget. Of that, approximately
@@ -196,7 +196,7 @@ export default function Page() {
         <P>
           Get the decomposition right and labor becomes the section of your report
           that builds the most trust, not the one that invites the most questions.
-          <InternalLink href="/"> The GM Ownership Report OS</InternalLink> includes a
+          <InternalLink href="/ownership-report"> The GM Ownership Report OS</InternalLink> includes a
           workbook tab built specifically to run this decomposition — wage-rate,
           volume, and overtime, reconciled to the total variance — every month,
           without rebuilding the math from scratch.

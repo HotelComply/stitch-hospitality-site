@@ -27,28 +27,28 @@ const FAQS = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="py-28 bg-[#fafaf7]">
+    <section id="faq" className="py-28 bg-[#f3f0ea]">
       <div className="max-w-3xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 mb-6 justify-center">
-            <span className="w-2 h-2 rounded-full bg-[#ff6464]" />
-            <span className="text-xs font-medium tracking-[0.18em] uppercase text-[#8b9190]">
+            <span className="w-2 h-2 rounded-full bg-[#9b8059]" />
+            <span className="text-xs font-medium tracking-[0.18em] uppercase text-[#777168]">
               FAQ
             </span>
           </div>
-          <h2 className="text-4xl lg:text-5xl text-[#071f1b]">Questions, answered</h2>
+          <h2 className="text-4xl lg:text-5xl text-[#141413]">Questions, answered</h2>
         </div>
 
         <div className="flex flex-col gap-4">
           {FAQS.map((item) => (
             <details
               key={item.q}
-              className="group p-6 rounded-2xl border border-[#e5e3db] bg-white open:border-[#ff6464]/30"
+              className="group p-6 rounded-2xl border border-[#d3ccbf] bg-white open:border-[#9b8059]/30"
             >
               <summary className="flex items-center justify-between gap-4 cursor-pointer list-none">
-                <span className="text-base font-medium text-[#071f1b]">{item.q}</span>
+                <span className="text-base font-medium text-[#141413]">{item.q}</span>
                 <svg
-                  className="w-4 h-4 shrink-0 text-[#8b9190] group-open:rotate-45 transition-transform duration-200"
+                  className="w-4 h-4 shrink-0 text-[#777168] group-open:rotate-45 transition-transform duration-200"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -57,7 +57,7 @@ export default function FAQ() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                 </svg>
               </summary>
-              <p className="mt-4 text-sm text-[#071f1b]/60 font-light leading-relaxed">{item.a}</p>
+              <p className="mt-4 text-sm text-[#141413]/60 font-light leading-relaxed">{item.a}</p>
             </details>
           ))}
         </div>
