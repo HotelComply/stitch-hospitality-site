@@ -19,11 +19,11 @@ export const metadata: Metadata = {
   creator: "Chris Suarez",
   publisher: "Stitch Hospitality",
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
+      index: true,
+      follow: true,
     },
   },
 };
