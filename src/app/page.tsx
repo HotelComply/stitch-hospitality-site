@@ -2,13 +2,30 @@ import type { Metadata } from "next";
 import StitchNav from "@/components/StitchNav";
 import StitchFooter from "@/components/StitchFooter";
 import AssignmentInquiry from "@/components/AssignmentInquiry";
+import JsonLd from "@/components/seo/JsonLd";
+import { faqSchema, leadershipServicesSchema } from "@/components/seo/schemas";
 import "./stitch.css";
 export const metadata: Metadata = {
- title: "Interim & Fractional Hotel Leadership",
+ title: { absolute: "Interim & Fractional Hotel Leadership | Stitch Hospitality" },
  description: "Experienced hotel leadership for transitions, growth, and performance improvement. General management, operations, sales, marketing, commercial, and catering leadership across California, Arizona, and Nevada.",
- openGraph:{title:"Stitch Hospitality — Experienced leadership. The right commitment.",description:"Interim, fractional, and project leadership for hotels.",images:[{url:"/images/stitch-lobby.webp",width:1280,height:720}]},
- twitter:{card:"summary_large_image",title:"Stitch Hospitality",description:"Interim & fractional hotel leadership",images:["/images/stitch-lobby.webp"]}
+ alternates:{canonical:"/"},
+ openGraph:{type:"website",url:"/",siteName:"Stitch Hospitality",title:"Stitch Hospitality — Interim & Fractional Hotel Leadership",description:"Interim, fractional, and project leadership for hotels across California, Arizona, and Nevada: general management, sales and commercial, catering and events.",images:[{url:"/images/stitch-lobby.webp",width:1280,height:720}]},
+ twitter:{card:"summary_large_image",title:"Stitch Hospitality — Interim & Fractional Hotel Leadership",description:"Interim, fractional, and project leadership for hotels across California, Arizona, and Nevada.",images:["/images/stitch-lobby.webp"]}
 };
+const engagements=[
+ {name:"Interim & Task Force Hotel Leadership",description:"Hands-on leadership during a vacancy, leave, opening, or management transition. One-month minimum, typically 30 to 90 days."},
+ {name:"Fractional Hotel Leadership",description:"Experienced executive attention on a recurring basis: a defined commitment of onsite and remote support on a monthly retainer."},
+ {name:"Focused Hotel Leadership Projects",description:"A specific challenge with defined deliverables and milestones, such as an operations assessment, a sales and catering reset, opening readiness, or an ownership-reporting rhythm."}
+];
+const faqs=[
+ {q:"What is interim hotel leadership?",a:"An experienced leader steps into a vacant or transitioning role, such as general manager, director of sales and marketing, or catering leadership, and runs it hands-on while the permanent solution takes shape. Stitch interim assignments have a one-month minimum and typically run 30 to 90 days."},
+ {q:"How does fractional hotel leadership work?",a:"A recurring commitment of onsite and remote executive time on a monthly retainer, with priorities, authority, and reporting agreed up front. It suits hotels that need senior attention without a full-time hire."},
+ {q:"Which roles does Stitch cover?",a:"General Manager, Hotel Manager or Assistant GM, and Director of Operations; Director of Sales & Marketing, Director of Sales, and Commercial Director; Director of Catering, Director of Catering & Events, and Director of Event Sales."},
+ {q:"Where does Stitch work?",a:"Hotels across California, Arizona, and Nevada, including the Bay Area, Southern California, Phoenix, Scottsdale, and Las Vegas. Onsite presence and travel are agreed around each assignment."},
+ {q:"What kinds of hotels does Stitch work with?",a:"Independent, boutique, luxury, and full-service hotels, and the owners and management companies behind them."},
+ {q:"What experience is behind Stitch?",a:"More than 25 years in luxury hotels and resorts, from group and national sales with Four Seasons, Waldorf Astoria, and Hyatt to full-property general management. Detailed credentials are shared privately on request."},
+ {q:"How does an engagement start?",a:"With a confidential conversation about the property, the leadership need, and timing. Scope, authority, measures, and the working rhythm are agreed before the work begins."}
+];
 const services=[
  {n:"01",title:"General Management & Operations",text:"Steady leadership when the hotel needs it most. Bring direction to the daily operation, align department heads, and keep ownership informed.",roles:["General Manager","Hotel Manager / Assistant GM","Director of Operations"],outcome:"Leadership continuity. Operational discipline."},
  {n:"02",title:"Sales, Marketing & Commercial",text:"Keep the commercial agenda moving. Lead the team, sharpen account priorities, and connect sales execution with the hotel's revenue strategy.",roles:["Director of Sales & Marketing","Director of Sales","Commercial Director"],outcome:"A clear plan. An accountable sales team."},
@@ -23,5 +40,6 @@ export default function HomePage(){return <div className="stitch-site"><a href="
 <section className="st-process st-wrap"><div className="st-section-head"><div><p className="st-eyebrow st-dark-label">CLEAR FROM THE START</p><h2>A plan. A rhythm.<br/>A considered handoff.</h2></div><p>Every assignment starts with clarity<br/>and ends with a team ready to carry on.</p></div><div className="st-process-grid">{[["01","Understand","Assess the property, the team, and the business priorities."],["02","Align","Agree scope, authority, measures, and the working rhythm."],["03","Lead","Execute with the team and report on progress and decisions."],["04","Transfer","Leave clear systems, priorities, and a practical handoff."]].map(([n,t,p])=><article key={n}><span>{n}</span><h3>{t}</h3><p>{p}</p></article>)}</div></section>
 <section className="st-territory"><div className="st-wrap st-territory-inner"><div><p className="st-eyebrow">WHERE WE WORK</p><h2>California, Arizona, Nevada.<br/>Onsite where it matters.</h2><p>From the Bay Area and Southern California to Phoenix, Scottsdale, and Las Vegas. A career built in California and Arizona hotels and resorts. Onsite presence and travel are agreed around the assignment.</p><a className="st-text-link" href="#contact">Tell us where you need support <span aria-hidden="true">↗</span></a></div><span className="st-territory-side">REGIONAL PERSPECTIVE.<br/>PROPERTY-LEVEL COMMITMENT.</span></div></section>
 <section className="st-resources st-wrap"><div><p className="st-eyebrow st-dark-label">TOOLS FOR THE PEOPLE RUNNING THE HOTEL</p><h2>Good leadership<br/>needs good systems.</h2></div><div><h3>The GM Ownership Report OS</h3><p>A practical playbook, workbook, report template, and prompt library for a clearer monthly ownership report.</p><a className="st-inline-link" href="/ownership-report">Explore the reporting system <span aria-hidden="true">↗</span></a></div></section>
+<section id="faq" className="st-faq st-wrap"><div className="st-section-head"><div><p className="st-eyebrow st-dark-label">QUESTIONS OWNERS ASK</p><h2>Interim and fractional<br/>leadership, explained.</h2></div></div><div className="st-faq-list">{faqs.map(f=><details key={f.q}><summary>{f.q}</summary><p>{f.a}</p></details>)}</div></section>
 <section id="contact" className="st-contact"><div className="st-wrap st-contact-grid"><div><p className="st-eyebrow">LET'S TALK ABOUT THE ASSIGNMENT</p><h2>What needs<br/>your attention?</h2><p>Tell us about your property, the leadership need, and your timing. We will start with a confidential conversation about fit and scope.</p><a className="st-contact-email" href="mailto:chris@stitchhospitality.com">chris@stitchhospitality.com <span aria-hidden="true">↗</span></a><p className="st-contact-small">Prefer a private introduction?<br/>Request credentials directly by email.</p></div><AssignmentInquiry/></div></section>
-</main><StitchFooter/></div>}
+</main><StitchFooter/><JsonLd data={leadershipServicesSchema(engagements)}/><JsonLd data={faqSchema(faqs)}/></div>}
